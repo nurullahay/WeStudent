@@ -1,0 +1,1128 @@
+body{
+    background-color: #fff;
+}
+*,
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+
+.container {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* NAVBAR START */
+.navbarMain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 77px;
+    background-color: #fff;
+    width: 100vw;
+}
+
+.navbar {
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+    border-color: #fff;
+    position: fixed;
+}
+
+.logoImg {
+    height: 37.59px;
+    cursor: pointer;
+}
+
+.navMenu {
+    margin-right: 50px;
+}
+
+#menuItems {
+    display: flex;
+    height: 60px !important;
+}
+
+.menuItem {
+    list-style-type: none;
+    display: inline;
+    padding: 0 18px;
+}
+
+.menuItem>a {
+    text-decoration: none;
+    color: rgba(51,51,51,0.74);
+}
+
+.menuItem>a:hover {
+    color: #00b1eb !important;
+    border-bottom: 2px solid #00b1eb;
+}
+.selectedItem {
+    color: #00b1eb !important;
+    border-bottom: 2px solid #00b1eb;
+}
+
+.navIcon {
+    display: flex;
+    position: absolute;
+}
+
+.lastMenuItem {
+    position:  relative !important;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    margin-right: 40px;
+    right: -20px;
+    left: auto;
+    margin-top: 42px;
+    height: 240px;
+    width: 240px;
+    background-color: #fff;
+    border-top: 2px solid #00A8FF;
+}
+
+.subMenu>ul {
+    list-style-type: none;
+}
+
+.navIconDown {
+    display: flex;
+    position: absolute;
+    margin-left: 110px;
+    font-size: 18px !important;
+}
+
+.subMenu>ul>li>a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgba(51,51,51,0.74);
+}
+
+.subMenu>ul>li {
+    margin-top: 44px;
+    max-width: 200px;
+}
+
+.lastMenuItem:hover .subMenu{
+    display: block;
+    position: absolute;
+    transition: .5s;
+}
+
+.lastMenuItem:hover #submitSpan{
+    border-bottom: 2px solid #00b1eb;
+    transition: .5s;
+}
+
+.subMenu_2 {
+    display: none !important;
+    position: absolute;
+    margin-right: 40px;
+    right: 200px;
+    margin-top: 0 !important;
+    left: auto;
+    top: 0 !important;
+    height: 240px;
+    width: 240px;
+    background-color: #fff;
+    border-top: 2px solid #00A8FF;
+    box-shadow: 10px 2px 17px -17px rgba(0,0,0,0.51);
+}
+
+.menuItemDown:hover .subMenu_2{
+    display: block !important;
+}
+
+/* NAVBAR FNISH */
+
+/* SECTİON START */
+
+.sectionMiddleArea {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    height: 70vh;
+    background-image: linear-gradient(180deg,#00cfef 0%,#00bde8 100%)!important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionLeft>img {
+ height: 460px;
+ margin-top: 50px;
+}
+
+.sectionRight {
+    display: grid;
+    text-align: center;
+    width: 485px;
+    color: white;
+    margin-top: 50px;
+}
+
+.sectionRight>h3 {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.sectionPic {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 460px;
+}
+
+.arrowSection {
+    height: 63.11px;
+}
+
+.appPic {
+    height: 47.87px;
+    cursor: pointer;
+}
+
+.sectionLast {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.sectionRegular {
+    height: 120px;
+    overflow: hidden;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.sectionRegularPics>a>img {
+    height: 119px;
+    width: auto;
+}
+
+.sectionRegularPics>a {
+    margin: 0 0 10px 10px;
+}
+
+.sectionLast::before {
+    content: '';
+    background-color: #00bfef;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 476px;
+    opacity: 0.5;
+}
+
+.sectionVideo {
+    height: 476px !important;
+    overflow: hidden;
+}
+
+.sectionLastText {
+    display: grid;
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    width: 40%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 70px;
+}
+
+.sectionLastText>h1 {
+    font-weight: 250;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.sectionLastText>h3 {
+    margin-bottom: 1.6em;
+    line-height: 1.7em;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+.btn1 {
+    height: 50px;
+    width: 173.34px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn2 {
+    height: 50px;
+    margin-left: 10px;
+    width: 205px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: rgba(0,0,0,.75);
+    background-color: #fff;
+}
+
+.section3 {
+    top: 0 !important;
+    background-color: #f2f2f2!important;
+    height: 405px;
+    padding-top: 100px;
+}
+
+.sectionFooter {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+.sectionFooter>div {
+    width: 353px;
+    display: grid;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sectionPro {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(34, 34, 34, 0.74);
+}
+
+.sectionPro>span {
+    font-size: 60px;
+    color: #00b1eb;
+}
+
+.sectionPro>h3 {
+    font: inherit;
+    vertical-align: baseline;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.951);
+    margin: 20px 0px 20px 0px ;
+}
+
+/* SECTİON FNISH */
+
+
+/* FOOTER START */
+.footer {
+    width: 100%;
+    height: 46px;
+    color: rgba(0,0,0,.5);
+    background-color: #dddddd;
+    bottom: 0 !important;
+    display: block;
+    position: relative;
+}
+
+#footerInfo {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+/* FOOTER FNISH */
+
+
+/* HITTA START */
+/* TOP AREA START */
+.topArea {
+    width: 100%;
+    height: 100vh;
+    background: url("img/WeStudents.jpeg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-top: 75px;
+}
+.overlay{
+    display: grid;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay>h1{
+    margin-top: 50%;
+    position: relative;
+}
+
+.overlay>span{
+    bottom: 0 !important;
+    margin: 0 auto;
+    position: relative;
+    font-size: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 90%;
+}
+
+/* TOP AREA FNİSH */
+
+/* COLUMN AREA START */
+.columnArea {
+    width: 100vw;
+    background-color: #eaeaea!important;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.columns {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.column {
+    height: 370px;
+    width: 568px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.column>a{
+    list-style-type: none !important;
+    height: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.columnHeader {
+    height: 25px;
+    background-color: rgba(97,97,97,1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.columnHeader>span {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.columnImg {
+    width: 568px;
+    height: auto;
+}
+
+.columnBrandLogo {
+    height: 40px;
+    width: 90px;
+}
+
+.columnBottom {
+    display: flex;
+    padding-top: 5px;
+}
+
+.columnBrandLogo {
+    margin-left: 10px;
+}
+
+.columnBottom>p {
+    margin-left: 25px;
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* COLUMN AREA FNİSH */
+.contact {
+    height: 300px;
+    background-color: #eaeaea!important;
+}
+.contactItems {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-top: 60px;
+}
+
+#contactIcons {
+    font-size: 40px;
+    padding: 0 110px;
+    color: #bfbfbf;
+}
+
+#contactIcons:hover {
+    color: #6b6b6b;
+}
+/* HITTA FNISH */
+
+/* MAGASIN START */
+.portfolioArea {
+    top: 75px !important;
+    margin-top: 80px;
+    background-color: #eaeaea!important;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+}
+.cards {
+    display: flex;
+    max-width: 65%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 380px;
+}
+
+.card {
+    height: 480px;
+    width: 500px;
+    margin: 0px 20px 0px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.card>a>img {
+    width: 500px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.cardCategory {
+    top: 0;
+    margin-right: 90px;
+    margin-top: 75px;
+    margin-left: 0;
+    padding-left: 0;
+    height: 340px;
+    width: 298px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.cardCategory>h2 {
+    background-color: #3E5062;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.categoryItem {
+    list-style-type: none;
+    padding: 14.8px 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.lastCategoeyItem {
+    border-bottom: none;
+}
+.categoryItem>a {
+    
+    color: rgba(0,0,0,.75);
+}
+
+.cardArea {
+    display: grid;
+    margin-bottom: 50px;
+}
+
+.pageHeader {
+    width: 54%;
+    padding-top: 20px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cardInfo {
+    height: 200px;
+}
+
+.cardInfo>a {
+    display: flex;
+    padding: 15px 20px;
+}
+
+.cardInfo>a>h2, h3 {
+    color: #00b1eb;
+    margin-right: 20px;
+}
+
+.cardInfo>h6, p {
+    color: #6b6b6b !important;
+    padding: 5px 20px;
+}
+
+.cardBtn {
+    margin: 5px 20px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    height: 35px;
+    width: 130px;
+    font-size: 17px;
+    font-weight: normal;
+    bottom: 0 !important;
+    display: block;
+}
+.cardMagasin {
+    height: 755px;
+}
+
+
+
+/* MAGASIN FNISH */
+
+/* REPORTAGE START */
+
+.cardMagasin>a>img {
+    height: 570px;
+}
+
+.magasinParag {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 2px 20px;
+}
+
+.cardHeader {
+    font-size: 20px;
+}
+
+/* REPORTAGE FNISH */
+
+
+.gutterMain {
+    background-image: linear-gradient(256deg,#00cfef 25%,#00b1eb 100%)!important;
+    width: 100% !important;
+    margin-top: 75px !important;
+}
+
+.gutterContainer {
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#gutterImg1>img {
+    height: 164px;
+    width: 164px;
+}
+
+#gutterImg2>img {
+    height: 84px;
+}
+
+.gutterLeftCont {
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 105px;
+    width: 50% !important;
+}
+
+.gutterRightCont {
+    max-width: 50%;
+    margin-top: 90px;
+}
+
+.gutterRightCont>h1 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.gutterRightCont>h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.gutterRightCont>p {
+    color: #fff !important;
+    letter-spacing: 1px;
+    padding-left: 0px !important;
+    line-height: 21px;
+}
+
+.gutterRightCont>h5 {
+    letter-spacing: 1px;
+    padding-left: 30px;
+    line-height: 18px;
+}
+
+.leftText {
+    text-align: left;
+}
+
+.gutterLeftCont>h1 {
+    margin-bottom: 20px  !important;
+}
+
+.gutterLeftCont>h5 {
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.gutterLineCont {
+    margin-top: 40px;
+}
+
+.gutterLineCont>h4 {
+    margin-bottom: 20px;
+}
+
+.gutterLineCont>h5 {
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.gutterEnd {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.gutterEnd>h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gutterEnd>h4 {
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+.cardTop {
+    height: 540px;
+    width: 920px;
+    background-image: url("img/studentProfiler/StudentprofilerTop1.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 3px;
+
+}
+
+
+/* RESPONSİVE PROCESS START */
+
+#menu-icon, #closeMenu-icon {
+    font-size: 22px;
+    display: none;
+    margin-right: 0px;
+    opacity: 0.8;
+
+}
+
+@media only screen and (max-width:1322px){
+    .sectionLastText>h1 {
+        font-size: 40px;
+        font-weight: 200;
+    }
+    .sectionLastText {
+        width: 60%;
+        left: 20%;
+    }
+}
+
+
+@media only screen and (max-width:1024px){
+    #menuItems {
+        display: flex;
+        padding-left: 20px;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        height: 270px !important;
+        line-height: 32px;
+        right: 0;
+        width: 100%;
+        float: right !important;
+        overflow: hidden !important;
+        transition: max-height .5s;
+        background-color: #fff;  
+    } 
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    /* Hitta Start */
+    .overlay>span {
+        margin-top: 80%;
+    }
+    .columns {
+        width: 80%;
+    }
+    .column {
+        width: 39vw;
+        height: auto;
+    }
+    .columnImg {
+        width: 39vw;
+    }
+    #contactIcons {
+        font-size: 35px;
+        padding: 0px 50px;
+    }
+    .contact {
+        height: 200px;
+    }
+    /* Hitta Fnish */
+
+    /* Magasin Start */
+    .cards {
+        display: flex;
+        max-width: 90vw;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .card {
+        height: auto;
+        width: 30vw;
+        margin: 0px 20px 0px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .card>a>img {
+        width: 30vw;
+    }
+    .cardCategory {
+        width: 25vw;
+    }
+
+    .pageHeader {
+        width: 57vw;
+    }
+    /* Magasin Fnish */
+    
+}
+
+@media only screen and (max-width:980px){
+    .sectionMiddleArea  {
+        height: 170vh;
+        display: grid;
+    }
+
+    .sectionLeft>img {
+        height: 1000px;
+        padding-top: 100px;
+    }
+
+    .sectionRight {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sectionFooter {
+        display: grid;
+    }
+
+    .sectionPro>h3 {
+        margin: 10px 0px 10px 0px ;
+    }
+
+    .sectionFooter>div {
+        padding-bottom: 50px;
+    }
+
+    .section3 {
+        height: 840px;
+        padding-top: 50px;
+    }
+
+    .sectionLast {
+        display: none;
+    }
+
+    /* Hitta Start */
+    #contactIcons {
+        font-size: 35px;
+        padding: 0px 35px;
+    }
+    /* Hitta Fnish */
+
+    /* Magasin Start */
+    .cards {
+        display: grid;
+    }
+    .card {
+        width: 65vw;
+        margin-bottom: 20px;
+    }
+    .card>a>img {
+        width: 65vw;
+    }
+    .cardMagasin>a>img {
+        height: auto;
+    }
+    /* Magasin Fnish */
+}
+
+@media only screen and (max-width:767px){
+    
+    .sectionRegular {
+        display: none;
+    }
+
+    .sectionLeft>img {
+        height: 900px;
+        margin-left: 50px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    /* Hitta Start */
+    .overlay>h1 {
+        font-size: 28px;
+    }
+    .overlay>span {
+        font-size: 32px;
+        margin-top: 100%;
+    }
+    #contactIcons {
+        font-size: 35px;
+        padding: 0px 25px;
+    }
+    .contact {
+        height: 150px;
+    }
+    /* Hitta Fnish */
+    /* Magasin Start */
+    .portfolioArea {
+        display: grid;
+    }
+    .cardArea {
+        width: 80vw;
+    }
+    .card {
+        width: 75vw;
+        margin-bottom: 20px;
+    }
+    .card>a>img {
+        width: 75vw;
+    }
+    .cardCategory {
+        margin: 0 auto;
+        width: 70vw;
+        margin-bottom: 20px;
+    }
+    /* Magasin Fnish */
+
+}
+
+@media only screen and (max-width:650px){
+    
+
+    .sectionLeft>img {
+        height: 740px;
+        margin-left: 50px;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .sectionRight {
+        padding-top: 0px;
+    }
+
+    .sectionMiddleArea {
+        height: 140vh;
+        padding: 20px;
+    }
+
+    .sectionRight {
+        max-width: 90%;
+    }
+
+    .sectionRight>h3 {
+        word-break: break-word;
+        word-wrap: break-word;
+    }
+    /* Hitta Start */
+    .overlay>h1 {
+        font-size: 25px;
+    }
+    .overlay>span {
+        font-size: 32px;
+        margin-top: 120%;
+    }
+    .columns {
+        display: grid;
+    }
+    .column {
+        width: 80vw;
+    }
+    .columnImg {
+        width: 80vw;
+    }
+    #contactIcons {
+        font-size: 28px;
+        padding: 0px 20px;
+    } 
+    /* Magasin Start */
+    .cardCategory {
+        margin: 0 auto;
+        width: 60vw;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    /* Magasin Fnish */
+    
+    /* Hitta Fnish */
+}
+
+@media only screen and (max-width:500px){
+    .sectionLeft>img {
+        height: 580px;
+        margin-left: 5px;
+    }
+    /* Hitta Start */
+    .overlay>h1 {
+        font-size: 20px;
+    }
+    .overlay>span {
+        font-size: 32px;
+        margin-top: 140%;
+    }
+    #contactIcons {
+        font-size: 25px;
+        padding: 0px 15px;
+    }
+    /* Hitta Fnish */
+}
+
+@media only screen and (max-width:428px){
+    
+
+    .sectionLeft>img {
+        height: 650px;
+        margin-left: 15px;
+        padding: 0;
+        padding-top: 0px;
+    }
+
+    .sectionRight>h1 {
+        font-size: 25px;
+    }
+
+    .sectionRight>h3 {
+        font-size: 15px;
+    }
+
+    .sectionPro>p {
+        font-size: 14px;
+    }
+
+    .logoImg {
+        height: 30px;
+    }
+
+    .navbar {
+        height: 65px;
+    }
+
+    .appPic {
+        height: 30px;
+    }
+
+    .footer {
+        height: 38px;
+    }
+    #footerInfo {
+        font-size: 13px;
+        padding-left: 20px;
+    }
+    /* Hitta Start */
+    .contact {
+        height: 115px;
+    }
+    /* Hitta Fnish */
+    /* Magasin Start */
+    .pageHeader {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .cardArea {
+        margin-bottom: 0px;
+    }
+    .cards {
+        margin: 0 auto;
+        margin-left: 30px;
+    }
+    .cardInfo>p {
+        font-size: 14px;
+    }
+
+    .cardInfo>a>h2 {
+        font-size: 16px;
+    }
+
+    .cardInfo>a>h3 {
+        font-size: 14px;
+    }
+    .cardBtn {
+        height: 30px;
+        width: 90px;
+        font-size: 14px;
+    }
+
+    .magasinParag {
+        font-size: 13px !important;
+    }
+    /* Magasin Fnish */
+
+}
+
+@media only screen and (max-width:400px){
+    .sectionPro {
+        overflow: hidden;
+        width: 94vw;
+    }
+
+    .sectionFooter {
+        width: 90vw !important;
+    }
+    /* Hitta Start */
+    #contactIcons {
+        font-size: 20px;
+        padding: 0px 15px;
+    }
+    /* Hitta Fnish */
+}
+

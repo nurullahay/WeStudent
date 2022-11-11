@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitta arbetsgivare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="mainContainer">
+            <div class="navbarMain">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/WeStudents_Logo.png" alt="logo" class="logoImg">
+                        </a>
+                    </div>
+                    <div class="navMenu">
+                        <ul id="menuItems">
+                            <li class="menuItem"><a href="index.html">Hem</a></li>
+                            <li class="menuItem"><a href="hitta.html">Hitta arbetsgivare</a></li>
+                            <li class="menuItem"><a href="magasin.html">Magasin</a></li>
+                            <li class="menuItem"><a href="reportage.html">Reportage</a></li>
+                            <li class="menuItem"><a href="blogg.html" class="selectedItem">Blogg</a></li>
+                            <li class="menuItem"><a href="reserabatt.html">Reserabatt</a></li>
+                            <li class="menuItem lastMenuItem">
+                                <a href="#">
+                                    <span id="submitSpan">Omm oss</span>
+                                    <span class="material-symbols-outlined navIcon">
+                                        expand_more
+                                    </span>
+                                </a>
+                                <div class="subMenu anime-top">
+                                    <ul>
+                                        <li class="menuItemDown">
+                                            <a href="#">
+                                                Omm oss
+                                                <span class="material-symbols-outlined navIconDown">
+                                                    navigate_next
+                                                </span>
+                                            </a>
+                                            <div class="subMenu subMenu_2">
+                                                <ul>
+                                                    <li><a href="#">MedlemSvilkor</a></li>
+                                                    <li><a href="#">Integritetspolicy</a></li>
+                                                    <li><a href="#">FAQ</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Jobba hos oss</a></li>
+                                        <li><a href="#">Kontakta oss</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <i
+                            class="fa-solid fa-bars"
+                            id="menu-icon"
+                            onclick="menuToggle();"
+                        ></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolioArea">
+                <div class="cardArea">
+                    <h1 class="pageHeader">BLOGG</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg1.png" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">JOBBMINGEL MED KRIMINALVÅRDEN</h2>
+                                </a>
+                                <p class="magasinParag">okt 13, 2022 | Blogg</p>
+                                <p class="magasinParag">Kom och träffa medarbetare hos oss på Kriminalvården! Vi berättar om vårt uppdrag, dina...</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg2.jpg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">ANTAR DU UTMANINGEN?</h2>
+                                </a>
+                                <p class="magasinParag">sep 1, 2022 | Blogg</p>
+                                <p class="magasinParag">Antar du utmaningen? Studerar du på universitet eller högskola? Var då med i tävlingen..</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg3.jpg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">FOODRUNNERS</h2>
+                                </a>
+                                <p class="magasinParag">aug 29, 2022 | Blogg</p>
+                                <p class="magasinParag">Foodrunners ger dig 5 heta tips på hur studenter kan spara pengar på mat! 1. Planera för veckan...</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg4.jpeg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">POLITIKER</h2>
+                                </a>
+                                <p class="magasinParag">maj 16, 2022 | Blogg</p>
+                                <p class="magasinParag">Bostadskrisen i Sverige är ett faktum. Det byggs för lite hyresrätter och de som faktiskt byggs....</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg5.jpeg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">LÄNSTRAFIKEN KRONOBERG GÄSTAR</h2>
+                                </a>
+                                <p class="magasinParag">apr 20, 2022 | Blogg</p>
+                                <p class="magasinParag">”App, app, app! Biljetten tack!” Är du trött på att hålla reda på pappersbiljetten? Vill du slippa...</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg6.jpeg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">LÄNSTRAFIKEN KRONOBERG GÄSTAR</h2>
+                                </a>
+                                <p class="magasinParag">apr 20, 2022 | Blogg</p>
+                                <p class="magasinParag">Det är ingen nyhet att vi tillsammans åker på en gemensam ansvarsresa mot en mer hållbar framtid....</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg7.jpeg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">LÄNSTRAFIKEN KRONOBERG GÄSTAR</h2>
+                                </a>
+                                <p class="magasinParag">apr 20, 2022 | Blogg</p>
+                                <p class="magasinParag">Vi drömmer om resor till vackra platser, fina byggnader och långa strandpromenader. Men har du...</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg8.jpeg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">LÄNSTRAFIKEN KRONOBERG GÄSTAR</h2>
+                                </a>
+                                <p class="magasinParag">apr 20, 2022 | Blogg</p>
+                                <p class="magasinParag">Visste du att vi på Länstrafiken Kronoberg erbjuder Tillsammansrabatt? Du kan med dina vänner resa...</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg9.jpg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">HEMESTER</h2>
+                                </a>
+                                <p class="magasinParag">feb 3, 2022 | Blogg</p>
+                                <p class="magasinParag">I och med den rådande pandemin har vi fått stor användning av begreppet ”hemester”, som innebär..</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="img/blogg/Blogg10.jpg" alt="">
+                            </a>
+                            <div class="cardInfo">
+                                <a href="#">
+                                    <h2 class="cardHeader">10 FRÅGOR TILL FACKFÖRBUNDET ST</h2>
+                                </a>
+                                <p class="magasinParag">feb 2, 2022 | Blogg</p>
+                                <p class="magasinParag">Text: Elin Liljero Eriksson Foto: Rickard L. Eriksson Varför ska man som student vara med i..</p>
+                                <button class="cardBtn">Las mer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardCategory">
+                    <h2>KATEGORIER</h2>
+                    <ul class="categoryItems">
+                        <li class="categoryItem">
+                            <a href="#">Blogg</a>
+                        </li>
+                        <li class="categoryItem">
+                            <a href="#">Intressanta företag</a>
+                        </li>
+                        <li class="categoryItem">
+                            <a href="#">Jobb & Karriär</a>
+                        </li>
+                        <li class="categoryItem">
+                            <a href="">Magasin</a>
+                        </li>
+                        <li class="categoryItem">
+                            <a href="#">Studentprofiler</a>
+                        </li>
+                        <li class="categoryItem lastCategoeyItem">
+                            <a href="#">Traineeprogram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footerContainer">
+                    <p id="footerInfo">© 2022 WeStudents | Get together!</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
