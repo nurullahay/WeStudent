@@ -1,6 +1,5 @@
 
 let menu = document.querySelector('#menu-icon');
-let menuClose = document.querySelector('#closeMenu-icon');
 
 let menuItems = document.querySelector("#menuItems");
 menuItems.style.maxHeight = "0px";
@@ -13,4 +12,16 @@ function menuToggle() {
         menuItems.style.maxHeight="0px";
     }
     
+}
+
+let submitMenuIcon = document.querySelector("#submitMenu");
+let submitMenu = document.querySelector(".subMenu");
+submitMenu.style.maxHeight = "0px";
+
+function subMenuToggle() {
+    if(submitMenu.style.maxHeight == "0px") {
+        submitMenu.style.maxHeight = "900px";
+    }else{
+        submitMenu.style.maxHeight="0px";
+    }
 }

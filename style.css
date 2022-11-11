@@ -90,12 +90,12 @@ button {
 }
 
 .subMenu {
-    display: none;
+    display: block;
     position: absolute;
-    margin-right: 40px;
+    margin-right: 38px;
     right: -20px;
     left: auto;
-    margin-top: 42px;
+    margin-top: 40px;
     height: 240px;
     width: 240px;
     background-color: #fff;
@@ -149,7 +149,9 @@ button {
     border-top: 2px solid #00A8FF;
     box-shadow: 10px 2px 17px -17px rgba(0,0,0,0.51);
 }
-
+.lastMenuItem {
+    height: 60px;
+}
 .menuItemDown:hover .subMenu_2{
     display: block !important;
 }
@@ -758,7 +760,6 @@ button {
     }
 }
 
-
 @media only screen and (max-width:1024px){
     #menuItems {
         display: flex;
@@ -893,9 +894,14 @@ button {
         height: auto;
     }
     /* Magasin Fnish */
+    /* Reserabatt Start */
+    .gutterContainer {
+        width: 80vw;
+    }
+    /* Reserabatt Fnish */
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
     
     .sectionRegular {
         display: none;
@@ -944,6 +950,34 @@ button {
         margin-bottom: 20px;
     }
     /* Magasin Fnish */
+    /* Reserabatt Start */
+    .gutterContainer {
+        display: grid;
+        width: 90vw;
+    }
+
+    .gutterRightCont {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .gutterRightCont>h1 {
+        font-size: 28px;
+    }
+    #resBr {
+        display: none;
+    }
+
+    #gutterImg1>img {
+        height: 200px;
+        width: auto;
+    }
+    #gutterImg2>img {
+        height: 100px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    /* Reserabatt Fnish */
 
 }
 
