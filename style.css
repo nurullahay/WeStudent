@@ -87,15 +87,16 @@ button {
 
 .lastMenuItem {
     position:  relative !important;
+    height: 60px;
 }
 
 .subMenu {
-    display: block;
+    display: none;
     position: absolute;
     margin-right: 38px;
     right: -20px;
     left: auto;
-    margin-top: 40px;
+    margin-top: 42px;
     height: 240px;
     width: 240px;
     background-color: #fff;
@@ -149,9 +150,7 @@ button {
     border-top: 2px solid #00A8FF;
     box-shadow: 10px 2px 17px -17px rgba(0,0,0,0.51);
 }
-.lastMenuItem {
-    height: 60px;
-}
+
 .menuItemDown:hover .subMenu_2{
     display: block !important;
 }
@@ -760,7 +759,14 @@ button {
     }
 }
 
+
 @media only screen and (max-width:1024px){
+
+    .lastMenuItem {
+        display: none;
+    }
+    
+
     #menuItems {
         display: flex;
         padding-left: 20px;
@@ -901,7 +907,7 @@ button {
     /* Reserabatt Fnish */
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
     
     .sectionRegular {
         display: none;
