@@ -963,8 +963,13 @@ button {
     }
 
     .gutterRightCont {
-        margin: 0 auto;
+        margin-right: 0px;
         max-width: 90%;
+
+    }
+
+    .gutterLeftCont {
+        width: 90% !important;
     }
 
     .gutterRightCont>h1 {
